@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Marck Script, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-shadow: 2px 2px 5px  white;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right , #000000, #1C1C1C);
+    box-sizing: border-box;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 1vh 0;
+}
+
+.lien_nav {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+ .lien_nav::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+ }
+
+ .lien_nav:hover::after {
+    transform: scale(1);
+ }
+
+.bio {
+    color: white;
+    box-sizing: border-box;
+    max-height: 30vh;
+    padding: 10vw 5vw;
+    position: relative;
+    transform-style: inherit;
+    background-image: linear-gradient(to bottom , #000000, #262626);
+    z-index: 2;
+}
+
+.bio h1 {
+    margin-top: -100px;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.profil {
+    padding: 0 10vw;
+}
+
+span {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.projets > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    color: white;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 6px 30px;
+}
+
+.projets > h2::before {
+    content: "";
+    display: inline-block;
+    height:40px;
+    width: 70px;
+    margin-bottom: 7px;
+    transform: translateY(50%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+}
+
+.projets > h2::after {
+    content: "";
+    display: inline-block;
+    height:40px;
+    width: 70px;
+    margin-bottom: 7px;
+    transform: translateY(50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+}
+
+.projets {
+    padding: 10vw 5vw;
+    background-image: url(image1.jpg);
+    position: relative;
+    background-size:cover;
+    background-position:bottom;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.projet > h2 > a {
+    text-decoration: none;
+    color: rgb(82, 186, 221);
+}
+
+.projet > h2 {
+    text-align: center;
+}
+
+.cards_projets {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards_projets > .card {
+    width: 25%;
+    margin-top: 5em;
+}
+
+.projet {
+    margin-bottom: 5vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: white;
+    padding: 1em 0;
+    display: inline-block;
+}
+
+.projet > h2, p {
+    padding: 10px;
+}
+
+.parcours > h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.parcours {
+    color: white;
+    box-sizing: border-box;
+    /* max-height: 30vh; */
+    padding: 5vw 5vw;
+    position: relative;
+    transform-style: inherit;
+    background-image: linear-gradient(to top , #000000, #262626);
+}
+
+.card {
+    line-height : 1.5;
+    width: 40%;
+    text-align: justify;
+}
+
+.container_1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.school {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(82, 186, 221);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right , #000000, #1C1C1C);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 1.5em 2em;
+}
